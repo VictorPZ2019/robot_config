@@ -1,0 +1,2 @@
+SUBSYSTEM=="usb", DRIVER=="usb", ATTRS{idVendor}=="045e", ATTRS{idProduct}=="0719", ACTION=="add", RUN+="/bin/systemctl restart xboxdrv.service"
+SUBSYSTEM=="usb", DRIVER=="usb", ATTRS{idVendor}=="045e", ATTRS{idProduct}=="0719", ACTION=="remove", RUN+="/bin/systemctl stop xboxdrv.service"
