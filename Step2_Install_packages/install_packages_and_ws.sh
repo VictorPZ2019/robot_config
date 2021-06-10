@@ -53,9 +53,7 @@ sudo apt-get -y install ros-melodic-realsense2-camera
 
 sudo apt-get -y install ros-melodic-realsense2-description
 
-cd ~/catkin_ws 
-
-catkin_make 
+cd ~/catkin_ws  
 
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 
