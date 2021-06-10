@@ -11,9 +11,9 @@ then
 
     echo "Se instalaran las Bibliotecas librealsense2-dkms y librealsense2-utils"
 
-    sudo apt-get install librealsense2-dkms 
+    sudo apt-get -y install librealsense2-dkms 
 
-    sudo apt-get install librealsense2-utils
+    sudo apt-get -y install librealsense2-utils
 else
     echo "Instalacion interumpida"
     exit 0
@@ -25,9 +25,9 @@ if [[ $prompt2 == "y" || $prompt2 == "Y" || $prompt2 == "yes" || $prompt2 == "Ye
 then
     echo "Se inatalaran los paquetes de desarrollador y depuración"
 
-    sudo apt-get install librealsense2-dev
+    sudo apt-get -y install librealsense2-dev
 
-    sudo apt-get install librealsense2-dbg
+    sudo apt-get -y install librealsense2-dbg
 else 
     echo "Instalacion interumpida"
     exit 0

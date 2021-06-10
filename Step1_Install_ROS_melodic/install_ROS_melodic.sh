@@ -15,7 +15,7 @@ sudo apt update
 
 echo "It will be installed ros-melodic-desktop-full"
 
-sudo apt install ros-melodic-desktop-full
+sudo apt -y install ros-melodic-desktop-full
 
 echo "3. Environment setup"
 
@@ -24,11 +24,11 @@ source ~/.bashrc
 
 echo "4. Dependencies for building packages"
 
-sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+sudo apt -y install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
 
 echo "5. Initialize rosdep"
 
-sudo apt install python-rosdep
+sudo apt -y install python-rosdep
 
 sudo rosdep init
 

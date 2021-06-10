@@ -13,6 +13,8 @@ sudo cp env.sh /etc/roverrobotics/env.sh
 echo "Copiando roverrobotics.service en /etc/systemd/system/roverrobotics.service"
 sudo cp roverrobotics.service /etc/systemd/system/roverrobotics.service
 
+echo "Copiando roverrobotics en /usr/sbin/roverrobotics"
+sudo cp roverrobotics /usr/sbin/roverrobotics
 echo "Enable services"
 
 sudo systemctl enable xboxdrv.service
