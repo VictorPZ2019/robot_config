@@ -4,7 +4,7 @@ PartOf=roscore.service
 After=NetworkManager.service time-sync.target roscore.service
 [Service]
 Type=simple
-User=fablab_rob
+User=rover2
 ExecStart=/usr/sbin/roverrobotics
 [Install]
 WantedBy=multi-user.target
