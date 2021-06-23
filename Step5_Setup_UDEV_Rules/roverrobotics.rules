@@ -3,5 +3,6 @@
 KERNEL=="ttyUSB*", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", MODE:="0777", SYMLINK+="rplidar"
 # creates fixed name for rover serial communication
 KERNEL=="ttyUSB[0-9]", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", MODE:="0777", SYMLINK+="rover", RUN+="/bin/setserial /dev/%k low_latency"
+KERNEL=="ttyUSB[0-9]", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", MODE:="0777", SYMLINK+="rover", RUN+="/bin/setserial /dev/%k low_latency"
 # create fixed mapping for xbox control to avoid inconsistent naming
 SUBSYSTEM=="input", KERNEL=="js*", ATTRS{name}=="Xbox Gamepad (userspace driver)", SYMLINK="input/jsX"
